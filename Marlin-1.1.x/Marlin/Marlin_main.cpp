@@ -14181,6 +14181,7 @@ void manage_inactivity(const bool ignore_stepper_queue/*=false*/) {
     if (killCount >= KILL_DELAY) {
       SERIAL_ERROR_START();
       SERIAL_ERRORLNPGM(MSG_KILL_BUTTON);
+      asm volatile ("jmp 0"); // RESET //Dario (siguiendo modificacion posteada por fernando verginaud)
       kill(PSTR(MSG_KILLED));
     }
   #endif
