@@ -776,6 +776,7 @@
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
 
+
 // Feedrate (mm/m) for the first approach when double-probing (MULTIPLE_PROBING == 2)
 #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
 
@@ -839,7 +840,7 @@
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false
-#define INVERT_Y_DIR true
+#define INVERT_Y_DIR false
 #define INVERT_Z_DIR false
 
 // @section extruder
